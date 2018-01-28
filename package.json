@@ -1,6 +1,6 @@
 {
   "name": "twz",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Magic templates",
   "license": "MIT",
   "repository": "herber/twz",
@@ -19,7 +19,17 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "template",
+    "templates",
+    "wizard",
+    "magic",
+    "pug",
+    "jade",
+    "literal",
+    "literals",
+    "ejs",
+    "hbs",
+    "handlebars"
   ],
   "dependencies": {
     "formatted": "^1.0.0"
