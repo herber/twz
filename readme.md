@@ -20,6 +20,27 @@ const twz = require('twz');
 twz('<h1>${ emoji }</h1>')({ emoji: '🧙' });
 ```
 
+## Examples
+
+### List
+
+```js
+const twz = require('twz');
+
+const listTemplate = '<ul>${ list.map(n => `<li>${n}</li>`).join('')</ul>';
+
+twz(listTemplate)({ list: [ '1', '2', '3' ] });
+// => <ul><li>1</li><li>2</li><li>3</li></ul>
+```
+
+### Heading
+
+```js
+const twz = require('twz');
+
+twz('<h1>${ name }</h1>')({ name: 'my name' });
+```
+
 ## API
 
 ### twz(input)(data)
@@ -69,27 +90,6 @@ The template's path.
 Type: `object`
 
 An object representing the template's data.
-
-## Examples
-
-### List
-
-```js
-const twz = require('twz');
-
-const listTemplate = '<ul>${ list.map(n => `<li>${n}</li>`).join('')</ul>';
-
-twz(listTemplate)({ list: [ '1', '2', '3' ] });
-// => <ul><li>1</li><li>2</li><li>3</li></ul>
-```
-
-### Heading
-
-```js
-const twz = require('twz');
-
-twz('<h1>${ name }</h1>')({ name: 'my name' });
-```
 
 ## License
 
