@@ -4,7 +4,7 @@
 
 ## Features
  - Tiny at just 23 loc
- - Based on template strings
+ - Based on tagged template literals
 
 ## Install
 
